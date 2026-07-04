@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dana Aljuaid — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<!-- NAV -->
+<nav id="navbar">
+  <div class="logo">Dana<br>Aljuaid</div>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="index-ar.html" class="lang-btn">العربية</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+ 
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home"     onclick="closeMobile()">Home</a>
+  <a href="#about"    onclick="closeMobile()">About</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#skills"   onclick="closeMobile()">Skills</a>
+  <a href="#contact"  onclick="closeMobile()">Contact</a>
+</div>
+ 
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Building thoughtful digital experiences</h1>
+    <p class="hero-sub">Computer Science Student &nbsp;|&nbsp; Web Developer</p>
+    <a href="#projects" class="btn-pill">View My Work</a>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </div>
+</section>
+ 
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="about-label">About me</p>
+        <h2 class="about-title">A little about me</h2>
+        <p class="about-text">
+          Computer Science student passionate about web development, with a strong interest in creating
+          clean and user-friendly digital experiences. I enjoy continuously learning and improving
+          my technical skills through building projects and exploring modern web technologies.
+        </p>
+        <div class="about-tags">
+          <div class="about-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            Jeddah, Saudi Arabia
+          </div>
+          <div class="about-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            Frontend Development &amp; UI Design
+          </div>
+          <div class="about-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            University of Jeddah
+          </div>
+        </div>
+        <a href="#contact" class="btn-pill">Let's Connect</a>
+      </div>
+      <div class="about-img-wrap reveal">
+        <img
+          class="about-img"
+          src="images/About.jpg"
+          alt="Scenic ocean view"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>Featured Projects</h2>
+      <p>A collection of projects built through academic work and personal exploration in web development and software design.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <img class="project-thumb" src="images/ArtScapeCard.png" alt="Code editor" loading="lazy" />
+        <div class="project-info">
+          <p class="project-tag">Website</p>
+          <h3 class="project-name">ArtScape</h3>
+          <p class="project-desc">A digital art platform that combines artwork showcasing, social interaction, and personalized recommendations in one user-friendly experience.</p>
+          <div class="project-links">
+            <a href="https://artscape-woad.vercel.app/" class="project-link">Live Demo</a>
+            <a href="https://github.com/DALJUAID/ArtScape" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img class="project-thumb" src="images/Travel.png" alt="Website" loading="lazy" />
+        <div class="project-info">
+          <p class="project-tag">Website</p>
+          <h3 class="project-name">Travel Agency Website</h3>
+          <p class="project-desc">A responsive travel website that showcases travel destinations, personalized itineraries, exclusive offers, and seamless user experience for trip planning.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo</a>
+            <a href="https://github.com/DALJUAID/TravelAgencyWebsite" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+       <div class="project-card reveal">
+        <img class="project-thumb" src="images/career1.jpg" alt="Data visualization" loading="lazy" />
+        <div class="project-info">
+          <p class="project-tag">Python • Rule-Based AI • Expert Systems</p>
+          <h3 class="project-name">Career Guidance Expert System</h3>
+          <p class="project-desc">A rule-based AI system that analyzes users' interests and skills to provide personalized career recommendations and guidance.</p>
+          <div class="project-links">
+            <a href="https://github.com/DALJUAID/AI-CareerGuidance" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+              <div class="project-card reveal">
+        <img class="project-thumb" src="images/Database.png" alt="Data visualization" loading="lazy" />
+        <div class="project-info">
+          <p class="project-tag">SQL • ERD • Database Management Systems</p>
+          <h3 class="project-name">Food Delivery Database System</h3>
+          <p class="project-desc">A relational database system for managing restaurants, customers, menus, orders, and delivery operations efficiently. </p>         <div class="project-links">
+            <a href="https://drive.google.com/file/d/1RqZ857RkEr-WCgJirQdav0LYdKPFnTgE/view?usp=sharing" class="project-link">View Report</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img class="project-thumb" src="images/Game1.png" alt="Data visualization" loading="lazy" />
+        <div class="project-info">
+          <p class="project-tag">C++ • OpenGL • GLUT • Game Development</p>
+          <h3 class="project-name">Rock Dodge Game</h3>
+          <p class="project-desc">A 2D OpenGL game featuring obstacle dodging, real-time gameplay, collision detection, and score tracking.</p>
+          <div class="project-links">
+            <a href="https://drive.google.com/file/d/17tWCCkfFxov5Dpnano_OHxBAPlAILE6P/view?usp=sharing" class="project-link">Watch Demo</a>
+            <a href="https://github.com/DALJUAID/Rock-Dodge-Game/tree/main" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+            <div class="project-card reveal">
+        <img class="project-thumb" src="images/DVDsCard.png" alt="Data visualization" loading="lazy" />
+        <div class="project-info">
+          <p class="project-tag">Java • OOP • GUI</p>
+          <h3 class="project-name">Classic Movies DVD Store</h3>
+          <p class="project-desc">A nostalgic DVD rental platform that allows users to browse classic movies, select purchase methods, and explore old film collections.</p>
+          <div class="project-links">
+            <a href="https://github.com/DALJUAID/OldMoviesDVDApp" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>Skills &amp; Tools</h2>
+      <p>Technologies and tools I use in design and development.</p>
+    </div>
+    <div class="skills-carousel-wrap reveal">
+      <div class="skills-nav">
+        <button class="carousel-btn" id="prevBtn" aria-label="Previous">&#8592;</button>
+        <button class="carousel-btn" id="nextBtn" aria-label="Next">&#8594;</button>
+      </div>
+      <div class="skills-track-outer">
+        <div class="skills-track" id="skillsTrack">
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <div class="skill-card-name">Figma</div>
+            <div class="skill-card-level">Advanced</div>
+            <div class="skill-dot-row">
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <div class="skill-card-name">HTML &amp; CSS</div>
+            <div class="skill-card-level">Advanced</div>
+            <div class="skill-dot-row">
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot filled"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-card-name">JavaScript</div>
+            <div class="skill-card-level">Intermediate</div>
+            <div class="skill-dot-row">
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚛️</div>
+            <div class="skill-card-name">React</div>
+            <div class="skill-card-level">Intermediate</div>
+            <div class="skill-dot-row">
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot filled"></div><div class="skill-dot"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🐍</div>
+            <div class="skill-card-name">Python</div>
+            <div class="skill-card-level">Intermediate</div>
+            <div class="skill-dot-row">
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot filled"></div><div class="skill-dot"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🗄️</div>
+            <div class="skill-card-name">SQL</div>
+            <div class="skill-card-level">Beginner</div>
+            <div class="skill-dot-row">
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot"></div><div class="skill-dot"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🌿</div>
+            <div class="skill-card-name">Git &amp; GitHub</div>
+            <div class="skill-card-level">Intermediate</div>
+            <div class="skill-dot-row">
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot filled"></div><div class="skill-dot"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📱</div>
+            <div class="skill-card-name">UI/UX Design</div>
+            <div class="skill-card-level">Advanced</div>
+            <div class="skill-dot-row">
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot filled"></div><div class="skill-dot filled"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-card reveal">
+      <div>
+        <h2 class="connect-title">Let's Connect</h2>
+        <div class="connect-deco"><span>✦</span></div>
+        <p class="connect-text">
+          I'm always open to new opportunities, collaborations, and exciting projects. 
+        <p class="connect-text">Whether you have an idea, a project, or an opportunity, I'd be happy to hear from you.<p/>
+
+        </p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/>
+              </svg>
+            </div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">Email</span>
+              <a href="mailto:daljuaid044@gmail.com" class="contact-item-val">daljuaid044@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/dana-al-juaid-0b79523a8/" target="_blank" class="contact-item-val">linkedin.com/in/dana-aljuaid</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">GitHub</span>
+              <a href="https://github.com/DALJUAID" target="_blank" class="contact-item-val">github.com/DALJUAID</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Phone Mockups -->
+      <div class="phones-wrap">
+        <div class="phone phone-left">
+          <div class="phone-inner">
+            <div class="phone-notch"></div>
+            <div class="phone-sparkle">✦</div>
+            <div class="phone-text">
+              Available for
+              <em>Opportunities</em>
+            </div>
+          </div>
+        </div>
+        <div class="phone phone-right">
+          <div class="phone-inner beach">
+            <div class="phone-notch"></div>
+            <div class="phone-sparkle">✦</div>
+            <div class="phone-text">
+              Great ideas<br>Start with a
+              <em>conversation</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Dana<br>Aljuaid</div>
+  <div class="footer-divider"></div>
+  <div class="footer-tagline">
+    Building thoughtful digital experiences.
+    <span class="footer-star">✦</span>
+  </div>
+  <div class="footer-copy">&copy; 2026 Dana Aljuaid</div>
+</footer>
+ 
+<div class="toast" id="toast">Message sent! I'll get back to you soon ✨</div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 

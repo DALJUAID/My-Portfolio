@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دانا الجعيد | معرض الأعمال</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+<div class="logo">
+        دانا<br>الجعيد
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#home" class="active">الرئيسية</a></li>
+        <li><a href="#about">نبذة عني</a></li>
+        <li><a href="#projects">المشاريع</a></li>
+        <li><a href="#skills">المهارات</a></li>
+        <li><a href="#contact">تواصل</a></li>
+    </ul>
+
+        <a href="index.html" class="lang-btn">English</a>
+
+
+    <button class="hamburger" id="hamburger" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    </nav>
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#home" onclick="closeMobile()">الرئيسية</a>
+
+        <a href="#about" onclick="closeMobile()">نبذة عني</a>
+
+        <a href="#projects" onclick="closeMobile()">المشاريع</a>
+
+        <a href="#skills" onclick="closeMobile()">المهارات</a>
+
+        <a href="#contact" onclick="closeMobile()">تواصل</a>
+
+    </div>
+
+    <!-- HERO -->
+
+    <section id="home">
+
+        <div class="hero-bg"></div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <h1 class="hero-title">
+                أصمم وأطور تجارب رقمية تجمع بين البساطة والجمال.
+            </h1>
+
+            <p class="hero-sub">
+                طالبة علوم حاسب | مطورة مواقع
+            </p>
+
+            <a href="#projects" class="btn-pill">
+                استعرض أعمالي
+            </a>
+
+        </div>
+
+        <div class="scroll-hint">
+
+            <span>مرر للأسفل</span>
+
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+
+                <polyline points="6 9 12 15 18 9" />
+
+            </svg>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="reveal">
+                    <p class="about-label">نبذة عني</p>
+                    <h2 class="about-title">تعرف علي أكثر</h2>
+                    <p class="about-text">
+                        أنا طالبة في تخصص علوم الحاسب، شغوفة بتطوير الويب وتصميم واجهات المستخدم، وأسعى إلى بناء
+                        تجارب رقمية أنيقة وسهلة الاستخدام. أستمتع بالتعلم المستمر وتطوير مهاراتي من خلال تنفيذ
+                        المشاريع العملية واستكشاف أحدث تقنيات تطوير الويب.
+
+                    </p>
+                    <div class="about-tags">
+                        <div class="about-tag">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            جدة، المملكة العربية السعودية
+                        </div>
+                        <div class="about-tag">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                            تطوير الواجهات الأمامية وتصميم واجهات المستخدم
+                        </div>
+                        <div class="about-tag">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                            جامعة جدة
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-pill">تواصل معي</a>
+                </div>
+                <div class="about-img-wrap reveal">
+                    <img class="about-img" src="images/About.jpg" alt="Scenic ocean view" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-inner">
+
+            <div class="section-header reveal">
+                <h2>أبرز المشاريع</h2>
+                <p>
+                    مجموعة من المشاريع التي أنجزتها خلال دراستي ومن خلال التعلم الذاتي في تطوير الويب وتصميم
+                    البرمجيات.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- ArtScape -->
+                <div class="project-card reveal">
+                    <img class="project-thumb" src="images/ArtScapeCard.png" alt="ArtScape" loading="lazy" />
+
+                    <div class="project-info">
+                        <p class="project-tag">موقع إلكتروني</p>
+
+                        <h3 class="project-name">ArtScape</h3>
+
+                        <p class="project-desc">
+                            منصة رقمية للفنون تجمع بين عرض الأعمال الفنية والتفاعل الاجتماعي وتقديم توصيات مخصصة
+                            للمستخدمين ضمن تجربة استخدام سهلة وأنيقة.
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://artscape-woad.vercel.app/" class="project-link">
+                                معاينة المشروع
+                            </a>
+
+                            <a href="https://github.com/DALJUAID/ArtScape" class="project-link">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel -->
+
+                <div class="project-card reveal">
+
+                    <img class="project-thumb" src="images/Travel.png" alt="Travel Website" loading="lazy" />
+
+                    <div class="project-info">
+
+                        <p class="project-tag">
+                            موقع إلكتروني
+                        </p>
+
+                        <h3 class="project-name">
+                            موقع وكالة سفر
+                        </h3>
+
+                        <p class="project-desc">
+                            موقع سياحي متجاوب يعرض الوجهات السياحية والرحلات والعروض المميزة مع تجربة استخدام سلسة
+                            تساعد المستخدم على التخطيط لرحلته بسهولة.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#" class="project-link">
+                                معاينة المشروع
+                            </a>
+
+                            <a href="https://github.com/DALJUAID/TravelAgencyWebsite" class="project-link">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- AI -->
+
+                <div class="project-card reveal">
+
+                    <img class="project-thumb" src="images/career1.jpg" alt="Career Guidance" loading="lazy" />
+
+                    <div class="project-info">
+
+                        <p class="project-tag">
+                            Python • الذكاء الاصطناعي • الأنظمة الخبيرة
+                        </p>
+
+                        <h3 class="project-name">
+                            نظام خبير للإرشاد المهني
+                        </h3>
+
+                        <p class="project-desc">
+                            نظام خبير يعتمد على القواعد لتحليل اهتمامات ومهارات المستخدم ثم تقديم توصيات مهنية تناسب
+                            شخصيته وميوله.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/DALJUAID/AI-CareerGuidance" class="project-link">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Database -->
+
+                <div class="project-card reveal">
+
+                    <img class="project-thumb" src="images/Database.png" alt="Database" loading="lazy" />
+
+                    <div class="project-info">
+
+                        <p class="project-tag">
+                            SQL • ERD • نظم إدارة قواعد البيانات
+                        </p>
+
+                        <h3 class="project-name">
+                            نظام قاعدة بيانات لتوصيل الطعام
+                        </h3>
+
+                        <p class="project-desc">
+                            قاعدة بيانات علائقية لإدارة المطاعم والعملاء والقوائم والطلبات وعمليات التوصيل بكفاءة.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://drive.google.com/file/d/1RqZ857RkEr-WCgJirQdav0LYdKPFnTgE/view?usp=sharing"
+                                class="project-link">
+                                عرض التقرير
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Game -->
+
+                <div class="project-card reveal">
+
+                    <img class="project-thumb" src="images/Game1.png" alt="Game" loading="lazy" />
+
+                    <div class="project-info">
+
+                        <p class="project-tag">
+                            C++ • OpenGL • GLUT • تطوير الألعاب
+                        </p>
+
+                        <h3 class="project-name">
+                            لعبة تفادي الصخور
+                        </h3>
+
+                        <p class="project-desc">
+                            لعبة ثنائية الأبعاد باستخدام OpenGL تتضمن تفادي العوائق واكتشاف الاصطدامات وتتبع النقاط
+                            أثناء اللعب.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://drive.google.com/file/d/17tWCCkfFxov5Dpnano_OHxBAPlAILE6P/view?usp=sharing"
+                                class="project-link">
+                                مشاهدة العرض
+                            </a>
+
+                            <a href="https://github.com/DALJUAID/Rock-Dodge-Game/tree/main" class="project-link">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DVD -->
+
+                <div class="project-card reveal">
+
+                    <img class="project-thumb" src="images/DVDsCard.png" alt="DVD Store" loading="lazy" />
+
+                    <div class="project-info">
+
+                        <p class="project-tag">
+                            Java • البرمجة الكينونية • واجهات GUI
+                        </p>
+
+                        <h3 class="project-name">
+                            متجر أفلام كلاسيكية
+                        </h3>
+
+                        <p class="project-desc">
+                            منصة تحاكي متجرًا كلاسيكيًا لتأجير وشراء أقراص DVD، تتيح للمستخدم استعراض الأفلام
+                            واختيار طريقة الشراء بسهولة.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/DALJUAID/OldMoviesDVDApp" class="project-link">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-inner">
+
+            <div class="section-header reveal">
+                <h2>المهارات والأدوات</h2>
+                <p>
+                    التقنيات والأدوات التي أستخدمها في تصميم وتطوير المواقع والتطبيقات.
+                </p>
+            </div>
+            <div class="skills-carousel-wrap reveal">
+                <div class="skills-nav">
+                    <button class="carousel-btn" id="nextBtn" aria-label="Next">&#8594;</button>
+                    <button class="carousel-btn" id="prevBtn" aria-label="Previous">&#8592;</button>
+                </div>
+                <div class="skills-track-outer">
+                    <div class="skills-track" id="skillsTrack">
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <div class="skill-card-name">Figma</div>
+                            <div class="skill-card-level">متقدم</div>
+                            <div class="skill-dot-row">
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <div class="skill-card-name">HTML &amp; CSS</div>
+                            <div class="skill-card-level">متقدم</div>
+                            <div class="skill-dot-row">
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <div class="skill-card-name">JavaScript</div>
+                            <div class="skill-card-level">متوسط</div>
+                            <div class="skill-dot-row">
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚛️</div>
+                            <div class="skill-card-name">React</div>
+                            <div class="skill-card-level">متوسط</div>
+                            <div class="skill-dot-row">
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot"></div>
+                                <div class="skill-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🐍</div>
+                            <div class="skill-card-name">Python</div>
+                            <div class="skill-card-level">متوسط</div>
+                            <div class="skill-dot-row">
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot"></div>
+                                <div class="skill-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🗄️</div>
+                            <div class="skill-card-name">SQL</div>
+                            <div class="skill-card-level">مبتدئ</div>
+                            <div class="skill-dot-row">
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot"></div>
+                                <div class="skill-dot"></div>
+                                <div class="skill-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🌿</div>
+                            <div class="skill-card-name">Git &amp; GitHub</div>
+                            <div class="skill-card-level">متوسط</div>
+                            <div class="skill-dot-row">
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot"></div>
+                                <div class="skill-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📱</div>
+                            <div class="skill-card-name">تصميم واجهات وتجربة المستخدم</div>
+                            <div class="skill-card-level">متقدم</div>
+                            <div class="skill-dot-row">
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot filled"></div>
+                                <div class="skill-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-inner">
+            <div class="contact-card reveal">
+                <div>
+                    <h2 class="connect-title">لنتواصل</h2>
+                    <div class="connect-deco"><span>✦</span></div>
+                    <p class="connect-text">
+                        أرحب دائمًا بالفرص الجديدة والتعاون والمشاريع المميزة.
+                    </p>
+
+                    <p class="connect-text">
+                        إذا كانت لديك فكرة أو مشروع أو فرصة عمل، فسيسعدني التواصل معك.
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <polyline points="22,4 12,13 2,4" />
+                                </svg>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-item-label">البريد الإلكتروني</span>
+                                <a href="mailto:daljuaid044@gmail.com"
+                                    class="contact-item-val">daljuaid044@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-item-label">لينكدإن</span>
+                                <a href="www.linkedin.com/in/dana-al-juaid-0b79523a8" target="_blank"
+                                    class="contact-item-val">linkedin.com/in/dana-aljuaid</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-item-label">GitHub</span>
+                                <a href="https://github.com/DALJUAID" target="_blank"
+                                    class="contact-item-val">github.com/DALJUAID</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone Mockups -->
+                <div class="phones-wrap">
+                    <div class="phone phone-left">
+                        <div class="phone-inner">
+                            <div class="phone-notch"></div>
+                            <div class="phone-sparkle">✦</div>
+                            <div class="phone-text">
+                                متاحة
+                                <em>لفرص العمل</em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone phone-right">
+                        <div class="phone-inner beach">
+                            <div class="phone-notch"></div>
+                            <div class="phone-sparkle">✦</div>
+                            <div class="phone-text">
+                                الأفكار الرائعة<br>تبدأ
+                                <em>بمحادثة</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">دانا<br>الجعيد</div>
+        <div class="footer-divider"></div>
+        <div class="footer-tagline">
+            أصمم وأطور تجارب رقمية تجمع بين البساطة والجمال.
+            <span class="footer-star">✦</span>
+        </div>
+        <div class="footer-copy">&copy; 2026 دانا الجعيد</div>
+    </footer>
+
+    <div class="toast" id="toast">تم إرسال رسالتك بنجاح ✨
+        سأتواصل معك في أقرب وقت. </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
